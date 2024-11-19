@@ -36,7 +36,9 @@ import androidx.compose.ui.draganddrop.DragAndDropTransferData
 import androidx.compose.ui.draganddrop.mimeTypes
 import androidx.compose.foundation.Canvas
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.OffsetEffect
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -121,7 +123,9 @@ fun DragAndDropBoxes(modifier: Modifier = Modifier) {
                 .background(Color.Red)
 
         ) {
-                drawCircle(Color.Green, radius = 50f, center = Offset(100f, 100f))
+          //  drawRect(Color.Blue, topleft = Offset( 100f, 300f), size = Size(100f, 100f))
+            //ToDo 3: make the circle into a rectangel (square)
+            drawRect(Color.Blue, topLeft = Offset(100f, 300f), size = Size(100f,100f))
        }
     }
 }
