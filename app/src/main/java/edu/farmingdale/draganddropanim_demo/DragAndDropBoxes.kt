@@ -35,6 +35,9 @@ import androidx.compose.ui.draganddrop.DragAndDropTarget
 import androidx.compose.ui.draganddrop.DragAndDropTransferData
 import androidx.compose.ui.draganddrop.mimeTypes
 import androidx.compose.foundation.Canvas
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material3.Icon
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
@@ -87,11 +90,9 @@ fun DragAndDropBoxes(modifier: Modifier = Modifier) {
                         enter = scaleIn() + fadeIn(),
                         exit = scaleOut() + fadeOut()
                     ) {
-                        Text(
-                            text = "Right",
-                            fontSize = 40.sp,
-                            color = Color.Red,
-                            fontWeight = FontWeight.Bold,
+                        //ToDo 4: replace the "right" with a Icon ArrowForward using ImageVector
+                     Icon(imageVector = Icons.Default.ArrowForward,
+                         contentDescription = "",
 
                             modifier = Modifier
                                 .fillMaxSize()
@@ -129,4 +130,6 @@ fun DragAndDropBoxes(modifier: Modifier = Modifier) {
        }
     }
 }
+
+
 
