@@ -90,7 +90,7 @@ fun DragAndDropBoxes(modifier: Modifier = Modifier) {
                         enter = scaleIn() + fadeIn(),
                         exit = scaleOut() + fadeOut()
                     ) {
-                        //ToDo 4: replace the "right" with a Icon ArrowForward using ImageVector
+                        //ToDo 4: replace the "right" with a Icon ArrowForward
                      Icon(imageVector = Icons.Default.ArrowForward,
                          contentDescription = "",
 
