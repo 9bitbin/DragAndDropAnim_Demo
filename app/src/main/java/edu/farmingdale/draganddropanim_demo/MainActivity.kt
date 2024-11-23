@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 // Done - is landscape only
 // ToDo 5: Make this work in landscape mode only
 
-//Done
+
 // ToDo 6: Rotate the rect around itself
 
 
